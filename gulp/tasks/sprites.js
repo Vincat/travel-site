@@ -22,7 +22,7 @@ var gulp = require('gulp'),
 	});
 
 	gulp.task('copySpriteGraphic', ['createSprite'], function() {
-		return gulp.src('./app/temp/sprite/css**/*.svg')
+		return gulp.src('./app/temp/sprite/css/**/*.svg')
 		 .pipe(gulp.dest('./app/assets/images/sprites'));
 	});
 
